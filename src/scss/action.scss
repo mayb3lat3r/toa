@@ -1,0 +1,42 @@
+@import "variables";
+@import "mixins";
+
+.action {
+  display: flex;
+  justify-content: space-around;
+  font-size: $font-size-head;
+  background-color: #1f1f1f;
+  padding: 0.2em;
+
+  :nth-child(1) {
+    a:hover {
+      color: #3333FF;
+    }
+  }
+
+  :nth-child(2) {
+    a:hover {
+      color: #FF0080;
+    }
+  }
+
+  :nth-child(3) {
+    a:hover {
+      color: #00FF00;
+    }
+  }
+
+  :nth-child(4) {
+    a:hover {
+      color: #FFFF00;
+    }
+  }
+}
+
+.action__item {
+  a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+}

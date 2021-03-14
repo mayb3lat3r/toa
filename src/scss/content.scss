@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixins";
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  font-size: large;
+  text-align: center;
+}

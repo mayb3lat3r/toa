@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixins";
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-theme {
+  padding: 0.5em;
+  border-radius: 0.8em;
+}
+
+.search-theme:focus {
+  outline: none;
+  border-color: #003cff;
+}

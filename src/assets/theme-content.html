@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <title>Главная</title>
+</head>
+<body>
+
+<div id="app" class="container">
+
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="theme-picker">
+                <nav>
+
+                    <div class="theme-picker__button" onclick="showThemePicker()">
+                        <div class="title">Выбор темы</div>
+                        <span class="material-icons">expand_more</span>
+                    </div>
+
+
+                    <ul id="theme-picker__menu">
+
+                        <li>
+                            <a href="" class="main-li-a">Системы счисления (кр)</a>
+                            <ul class="theme-picker__submenu">
+                                <li><a href="" class="sub-li-a">Системы счисления, позиционные, непозиционные,
+                                    однородные, неоднородные, <p>с постоянными весами разрядов, с непостоянными весами
+                                        разрядов, код Грея,
+                                    <p> системы счисления специального назначения</a></li>
+                                <li><a href="" class="sub-li-a">Перевод чисел из одной системы счисления в другую</a>
+                                </li>
+                                <li><a href="" class="sub-li-a">Два метода перевода чисел: табличный и расчетный</a>
+                                </li>
+                                <li><a href="" class="sub-li-a">Перевод целых чисел, перевод правильных дробей, перевод
+                                    неправильных дробей, <p> перевод в системы счисления с кратным основанием</a></li>
+                                <li><a href="" class="sub-li-a">Выбор системы счисления для ЭВМ</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="" class="main-li-a">Логические основы цифровых автоматов (кр)</a>
+                            <!--                            <ul class="theme-picker__submenu">-->
+                            <!--                                <li><a href="" class="sub-li-a">Определение логической переменной и логической функции</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Простые и сложные функции</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">ДОсновные элементарные логические функции: отрицание, конъюнкция, дизъюнкция, сложение по модулю два, <p> равнозначность, стрелка Пирса, штрих Шеффера.</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Эквивалентность и её примеры</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Основные законы и правила алгебры логики</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Понятие полноты (базиса), система логических функций</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Представление логических функций в базисе И, ИЛИ, НЕ</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Нормальные и совершенные нормальные конъюнктивные и дизъюнктивные формы</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Понятие минимального базиса</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Базис Шеффера</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Представление логических функций в базисе Шеффера</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Базис Пирса</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Представление логических функций в базисе Пирса</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Задача анализа и синтеза логических функций</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Геометрическое и числовое представление логических функций</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Понятия и определения: минтерм,ранг, покрытие, вхождение, импликанта, сокращенная нормальная форма, тупиковая форма</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Задача минимизации логических функций и ограничения при ее рассмотрении</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Методы минимизации логических функций</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Минимизация логических функций методом Квайна. Пример</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Минимизация логических функций методом Квайна мак Класки</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Минимизация с помощью карт Карно</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Не полностью определенные логические функции и их минимизация</a></li>-->
+
+                            <!--                            </ul>-->
+                        </li>
+
+                        <li>
+                            <a href="" class="main-li-a">Арифметические основы цифровых автоматов (кр)</a>
+                            <!--                            <ul class="theme-picker__submenu">-->
+                            <!--                                <li><a href="" class="sub-li-a">Способы представления чисел в ЭВМ. Форматы представления чисел с фиксированной запятой (точкой) и с плавающей запятой</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Диапазон и точность представления чисел</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Представление в ЭВМ чисел со знаком</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Прямой, обратный и дополнительный коды</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Алгебраическое суммирование чисел с фиксированной запятой с использованием обратного и дополнительного кодов</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Модифицированные коды</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Умножение правильных дробей, представленных в прямом, дополнительном, обратном кодах на два в степени +/- k</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">4 способа умножения чисел с фиксированной запятой, заданных в прямом коде</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Логические и аппаратные методы ускорения умножения. Умножение одновременно на два разряда множителя. Матричные схемы умножения</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Умножение в дополнительном коде с использованием корректирующего шага</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Умножение в дополнительном коде используя анализ двух смежных разрядов множителя</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Умножение в обратном коде</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Деление чисел с фиксированной запятой, заданных в прямом и дополнительном кодах</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Деление с восстановлением остатка и без восстановления</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Деление со сдвигом остатка и со сдвигом делителя</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Выполнение арифметических операций над числами с плавающей запятой</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Обоснование блокировок</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Машинный нуль и бесконечность</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Десятичные двоично-кодированные системы</a></li>-->
+                            <!--                            </ul>-->
+                        </li>
+
+                        <li>
+                            <a href="" class="main-li-a">Абстрактные автоматы (кп)</a>
+                            <!--                            <ul class="theme-picker__submenu">-->
+                            <!--                                <li><a href="" class="sub-li-a">Основные понятия и определения</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Конечный автомат, полностью определенный, частичный автомат, синхронный, асинхронный автомат</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Закон функционирования автоматов МИЛИ и МУРА</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Табличный и графический способы задания автоматов</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Эквивалентные автоматы</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Преобразование автомата МУРА в автомат МИЛИ и наоборот</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Совмещенная модель автомата (С автомат)</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Задача минимизации автоматов</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Три основных вида соединения автоматов: последовательное, параллельное и с обратной связью</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Задача композиции и декомпозиции автоматов</a></li>-->
+                            <!--                            </ul>-->
+                        </li>
+
+                        <li>
+                            <a href="" class="main-li-a">Структурные автоматы (кп)</a>
+                            <!--                            <ul class="theme-picker__submenu">-->
+                            <!--                                <li><a href="" class="sub-li-a">Канонический метод структурного синтеза автоматов</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Теорема о структурной полноте</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Элементарные полные автоматы с одним и двумя входами</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Основные этапы и примеры структурного синтеза автоматов</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Состязания и гонки в автоматах</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Способы устранения критических состязаний</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Противогоночное кодирование состояний автомата</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Кодирование состояний и сложность комбинационных схем, реализующих функции выходов и возбуждения элементов памяти</a></li>-->
+                            <!--                            </ul>-->
+                        </li>
+
+                        <li>
+                            <a href="" class="main-li-a">Микропрограммные автоматы (кп)</a>
+                            <!--                            <ul class="theme-picker__submenu">-->
+                            <!--                                <li><a href="" class="sub-li-a">Принцип микропрограммного управления</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Модель дискретного преобразователя Глушкова</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Функции операционного и управляющего автоматов</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Задача проектирования операционного устройства</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Функциональная микропрограмма</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Язык функционального микропрограммирования</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Содержательный и закодированный графы микропрограммы</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Структурная организация операционных автоматов</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Структурный базис: шины, регистры, комбинационные схемы</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Каноническая структура операционного автомата</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Операционные элементы комбинационного и накапливающего типов</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Управляющие автоматы с жесткой логикой</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Интерпретация микропрограммы автоматами МИЛИ и МУРА</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Управляющие автоматы с программируемой логикой</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Микрокоманды</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Распределение микроопераций по полям микрокоманды</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Принудительная и естественная адресация микрокоманд</a></li>-->
+                            <!--                            </ul>-->
+                        </li>
+
+                        <li>
+                            <a href="" class="main-li-a">Учебный стенд «Altera DE 2-115» и средства автоматизации
+                                проектирования
+                                (тестирование)</a>
+                            <!--                            <ul class="theme-picker__submenu">-->
+                            <!--                                <li><a href="" class="sub-li-a">Структура стенда «Altera DE 2-115» и программируемой логической интегральной схемы (ПЛИС) «CYCLON IY»</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">САПР «QUARTUS II». Ввод проектов, верификация проектов, реализация проектов в кристалле ПЛИС</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Основы языка VHDL</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Объекты языка: сигнал, переменная, константа</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Интерфейс и архитектура объекта</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Поведенческий, структурный и смешанные стили описания архитектуры</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Последовательные и параллельные операторы</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Функции и процедуры</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Библиотеки и пакеты</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Верификация HDL описаний</a></li>-->
+                            <!--                                <li><a href="" class="sub-li-a">Приложение ModelSim. Создание нового проекта, добавление новых файлов, моделирование в ModelSim</a></li>-->
+                            <!--                            </ul>-->
+                        </li>
+                    </ul>
+
+
+                </nav>
+
+            </div>
+
+            <div class="search">
+                <input type="text" class="search-theme" placeholder="Поиск темы"/>
+                <!--                <span class="material-icons">search</span>-->
+            </div>
+
+            <div class="user">
+                <div class="user__settings">
+                    <span class="material-icons md-18">settings</span>
+                </div>
+                <div class="user__name">Имя Фамилия</div>
+                <div class="user__avatar">
+                    <span class="material-icons md-24">account_circle</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="action">
+
+            <span class="action__item"><a href="#">Теоретический материал по теме</a></span>
+            <span class="action__item"><a href="#">Практическое упражнение</a></span>
+            <span class="action__item"><a href="">Тестирование</a></span>
+            <span class="action__item"><a href="#">КР</a></span>
+
+        </div>
+
+        <div class="theme-content">
+
+            <h1 class="theme-content__title">Перевод чисел из одной системы счисления в другую</h1>
+            <h4 class="theme-content__description">Это описание темы. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, veritatis?
+            </h4>
+            <section class="theme-material">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cum error, est eum, exercitationem, hic iusto perferendis placeat porro praesentium quidem repellat similique tenetur vel vitae. Animi, aspernatur debitis eaque enim exercitationem inventore ipsum quas similique. Accusamus adipisci autem delectus distinctio eaque eos illo, illum in iste iure, maiores maxime minima, molestias necessitatibus nesciunt nihil placeat qui quo recusandae reiciendis repellat repellendus saepe sit tenetur ut vero voluptatem. Aliquam beatae blanditiis cum distinctio fugiat fugit ipsa nesciunt quae ullam voluptatem. Accusamus ad aspernatur consequatur deserunt dicta distinctio dolor dolore hic illum, iste minus non obcaecati repellat saepe tenetur vero voluptate!
+            </section>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="./src/additional-js/functions.js"></script>
+</body>
+</html>

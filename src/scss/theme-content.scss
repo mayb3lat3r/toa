@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+
+.theme-content {
+  height: 100vh;
+  padding: 2em;
+  max-width: $content-max-width;
+  margin: auto;
+  //display: flex;
+  //flex-direction: column;
+  //margin: 0 auto;
+}
+
+.theme-content__title {
+  padding-bottom: 0.5em;
+  display: inline-block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.theme-content__description {
+  display: block;
+}
+
+.theme-material {
+  padding-top: 1em;
+  text-align: justify;
+}
