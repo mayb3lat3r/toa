@@ -1,4 +1,5 @@
 .idea
-dist/
-.cache/
+dist
+.cache
 package-lock.json
+node_modules
