@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import "~normalize.css";
-
 @import "header";
-@import "theme-picker";
 @import "user";
 @import "content";
 @import "search";
 @import "theme-content";
 @import "action";
+@import "selector";
 
 * {
   margin: 0;
@@ -20,6 +18,22 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #fafafa;
   line-height: normal;
+
+  &:hover {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
 }
 
 .content {

@@ -1,0 +1,94 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$sel-h: 50px;
+
+//.wrapper {
+//  height: 100vh;
+//  display: flex;
+//  justify-content: center;
+//  padding-top: 10%;
+//}
+
+//.some-block {
+//  width: 25rem;
+//  height: $sel-h;
+//}
+
+.selector {
+  position: relative;
+  width: 100%;
+  //border: 2px solid black;
+  max-width: 15em;
+  user-select: none;
+  cursor: pointer;
+  z-index: 999;
+
+  &__backdrop {
+    position: fixed;
+    z-index: -1;
+    display: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &.expand {
+    .selector__list {
+      display: block;
+    }
+    .selector__backdrop {
+      display: block;
+    }
+  }
+
+  &__head {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $sel-h;
+    //border-bottom: 1px solid black;
+  }
+
+  &__list {
+    position: relative;
+    display: none;
+    max-height: $sel-h*5;
+    overflow-y: auto;
+
+    li:last-child {
+      border-bottom-style: none;
+    }
+  }
+
+  &__item {
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    height: $sel-h;
+    border-bottom: 1px solid #cccccc;
+    transition: 0.1s ease-in;
+  }
+
+  &__item:hover {
+    background-color: dodgerblue;
+    color: #ffffff;
+  }
+
+  &__list:hover {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &__list::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+  }
+
+  &__list::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
